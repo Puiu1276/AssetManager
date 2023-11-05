@@ -27,11 +27,9 @@ public class AssetEntityFactoryImpl implements IAssetEntityFactory{
     public Asset createAsset(String name, String description, AssetCategory category) {
         Integer nextID = assetRepository.getNextID();
         Asset newAsset = new Asset(nextID, name, description, category);
-        // Aici poti adauga logica pentru setarea altor proprietati specifice unui activ nou creat
         return newAsset;
     }
 
-    // Alte metode pentru a construi diferite tipuri de active sau configuratii
 
     @Override
     public Asset buildSimpleAsset(String assetName) {
