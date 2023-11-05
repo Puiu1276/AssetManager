@@ -59,7 +59,7 @@ public class Asset implements Comparable<Asset>, Serializable {
     // Metoda compareTo pentru sortare dupa nume
     @Override
     public int compareTo(Asset other) {
-        return this.getName().compareTo(other.getName());
+         return this.getName().compareTo(((Asset)obj).getName());
     }
 
 
