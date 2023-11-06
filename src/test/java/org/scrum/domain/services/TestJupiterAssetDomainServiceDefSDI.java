@@ -43,8 +43,8 @@ public class TestJupiterAssetDomainServiceDefSDI {
 
     @Test
     public void testQualifiedAssetEntityFactory() {
-        // Here we would check something specific to the qualified asset factory if needed
-        Integer assetCounts = qualifiedAssetFactory.getAssetRepository().size();
+        // CDI -> AppContextConfig -> @Produces IProjectEntityFactory :: initDomainServiceEntities -- Repository
+        Integer assetCounts = qualifiedAssetFactory.getAssetEntityRepository().size();
         assertTrue(assetCounts > 0, "Assets are not being counted...");
         logger.info("Qualified Project count: " + assetCounts);
     }

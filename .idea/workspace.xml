@@ -4,28 +4,23 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="93c8db44-8593-4a8d-b8e7-07d86b1272da" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/scrum/SpringBootScrumApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/scrum/domain/asset/Asset.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/scrum/domain/asset/AssetCategory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/scrum/domain/asset/AssetData.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/scrum/domain/asset/AssetRecord.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/scrum/domain/services/AssetDomainServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/scrum/domain/services/AssetEntityFactoryImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/scrum/domain/services/AssetEntityRepositoryImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/scrum/domain/services/IAssetDomainService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/scrum/domain/services/IAssetEntityFactory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/scrum/domain/services/IAssetEntityRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/org/scrum/domain/services/TestJupiterAssetDomainServiceDefSDI.java" afterDir="false" />
+    <list default="true" id="93c8db44-8593-4a8d-b8e7-07d86b1272da" name="Changes" comment="Test-ready">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/scrum/domain/asset/Asset.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/scrum/domain/asset/Asset.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/scrum/domain/services/AssetDomainServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/scrum/domain/services/AssetDomainServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/scrum/domain/services/AssetEntityFactoryImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/scrum/domain/services/AssetEntityFactoryImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/scrum/domain/services/AssetEntityRepositoryImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/scrum/domain/services/AssetEntityRepositoryImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/scrum/domain/services/IAssetDomainService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/scrum/domain/services/IAssetDomainService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/scrum/domain/services/IAssetEntityFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/scrum/domain/services/IAssetEntityFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/scrum/domain/services/IAssetEntityRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/scrum/domain/services/IAssetEntityRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/scrum/domain/services/TestJupiterAssetDomainServiceDefSDI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/scrum/domain/services/TestJupiterAssetDomainServiceDefSDI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/scrum/domain/services/AssetDomainServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/scrum/domain/services/AssetDomainServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/scrum/domain/services/AssetEntityFactoryImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/scrum/domain/services/AssetEntityFactoryImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/scrum/domain/services/AssetEntityRepositoryImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/scrum/domain/services/AssetEntityRepositoryImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/scrum/domain/services/IAssetDomainService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/scrum/domain/services/IAssetDomainService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/scrum/domain/services/IAssetEntityFactory.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/scrum/domain/services/IAssetEntityFactory.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/org/scrum/domain/services/TestJupiterAssetDomainServiceDefSDI.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/org/scrum/domain/services/TestJupiterAssetDomainServiceDefSDI.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,14 +45,14 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "git-widget-placeholder": "master"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\User\Desktop\SIA-Master\SIA-Master-An1\SIA-Master-An1-Sem1\DAM\Proiect_DAM\Proiect_DAM\.idea" />
@@ -108,6 +103,38 @@
       <option name="presentableId" value="Default" />
       <updated>1699047371030</updated>
     </task>
+    <task id="LOCAL-00001" summary="Test-ready">
+      <option name="closed" value="true" />
+      <created>1699187420508</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1699187420508</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Test-ready">
+      <option name="closed" value="true" />
+      <created>1699187671774</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1699187671775</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Test-ready" />
+    <option name="LAST_COMMIT_MESSAGE" value="Test-ready" />
   </component>
 </project>

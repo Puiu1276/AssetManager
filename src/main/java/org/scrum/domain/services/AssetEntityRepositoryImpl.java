@@ -1,6 +1,7 @@
 package org.scrum.domain.services;
 
 import org.scrum.domain.asset.Asset;
+import org.scrum.domain.asset.AssetCategory;
 import org.springframework.context.annotation.Scope;
 import org.springframework.stereotype.Component;
 
@@ -42,13 +43,26 @@ public  class AssetEntityRepositoryImpl implements IAssetEntityRepository {
     // Retrieve all assets as a collection
     @Override
     public Collection<Asset> toCollection() {
+        List<Asset> assetList = new ArrayList<>();
+        assetList.addAll(this.assets.values());
         return new ArrayList<>(assets.values());
+    }
+
+    @Override
+    public Asset getAssetByName(String name) {
+        return null;
+    }
+
+    @Override
+    public List<Asset> getAssetsByCategory(AssetCategory category) {
+        return null;
     }
 
     // Add a new asset to the repository
     @Override
     public Asset add(Asset entity) {
         if (entity.getAssetID() == null) {
+            nextID++;
             entity.setAssetID(getNextID());
         }
         assets.put(entity.getAssetID(), entity);

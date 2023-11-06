@@ -1,37 +1,22 @@
 package org.scrum.domain.services;
-import org.scrum.domain.asset.Asset;
 
-import java.time.LocalDateTime;
-import java.util.Date;
+import org.scrum.domain.asset.Asset;
+import org.scrum.domain.asset.AssetCategory;
+
 import java.util.List;
 
 public interface IAssetEntityFactory {
 
     // Method to build a simple asset with default configuration
-    Asset buildSimpleAsset(String assetName);
-
-    // Method to build an asset with custom acquisition date and depreciation period
-    Asset buildAssetWithCustomDepreciation(String assetName, Date acquisitionDate, Integer depreciationPeriodInMonths);
-
-    // Method to build an asset with custom acquisition date and depreciation period using LocalDateTime
-    Asset buildAssetWithCustomDepreciation(String assetName, LocalDateTime acquisitionDate, Integer depreciationPeriodInMonths);
-
-    // Method to build an asset and track multiple maintenance schedules
-    Asset buildAssetWithMaintenanceSchedules(String assetName, List<Date> maintenanceStartDates);
-
+    public Asset createAsset(String name, String location, AssetCategory category);
     // Dependency injection methods
-    void setAssetRepository(IAssetEntityRepository repository);
-    IAssetEntityRepository getAssetRepository();
+    public void setAssetRepository(IAssetEntityRepository repository);
+    public IAssetEntityRepository getAssetEntityRepository();
+    public IAssetEntityRepository getAssetRepository();
+    public Integer getAssetCount();
+    public List<Asset> getAllAssets();
+    public Asset getAssetById(Integer assetId);
+    public List<Asset> getAssetsByCategory(String category);
+    public Asset getAssetByName(String name);
 
-    List<Asset> getAllAssets();
-
-    Integer getAssetCount();
-
-    Asset getAssetById(Integer assetId);
-
-    List<Asset> getAssetsByCategory(String category);
-
-    Integer getAssetsCountByCategory(String type);
-
-    Asset getAssetByName(String assetName);
 }

@@ -1,8 +1,11 @@
 package org.scrum.domain.services;
 
 import org.scrum.domain.asset.Asset;
+import org.scrum.domain.asset.AssetCategory;
 
 import java.util.Collection;
+import java.util.List;
+
 public interface IAssetEntityRepository {
     // Obține următorul ID disponibil pentru un nou activ
     public Integer getNextID();
@@ -15,6 +18,10 @@ public interface IAssetEntityRepository {
 
     // Obține toate activele ca o colecție
     public Collection<Asset> toCollection(); // getAll
+
+    public Asset getAssetByName(String name);
+
+    public List<Asset> getAssetsByCategory(AssetCategory category);
 
     // Adaugă un nou activ în repository
     public Asset add(Asset entity);
