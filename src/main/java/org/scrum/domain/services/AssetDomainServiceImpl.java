@@ -10,7 +10,7 @@ import java.util.List;
 import java.util.stream.Collectors;
 
 @Component
-public abstract class AssetDomainServiceImpl implements IAssetDomainService {
+public  class AssetDomainServiceImpl implements IAssetDomainService {
 
     @Autowired
     private IAssetEntityRepository assetRepository;
@@ -52,6 +52,14 @@ public abstract class AssetDomainServiceImpl implements IAssetDomainService {
                 .filter(asset -> asset.getName().equalsIgnoreCase(name))
                 .findFirst()
                 .orElse(null);
+    }
+
+    @Override
+    public Integer getAssetCountByCategory(AssetCategory category) {
+        // Folosim stream-ul pentru a filtra activele după categorie și a număra rezultatele.
+        return (int) assetRepository.toCollection().stream()
+                .filter(asset -> asset.getCategory().equals(category))
+                .count();
     }
     @Override
     public void updateAssetLocation(Integer assetID, String newLocation) {

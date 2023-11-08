@@ -6,21 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="93c8db44-8593-4a8d-b8e7-07d86b1272da" name="Changes" comment="Test-ready">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/scrum/domain/asset/Asset.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/scrum/domain/asset/Asset.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/scrum/domain/services/AssetDomainServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/scrum/domain/services/AssetDomainServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/scrum/domain/services/AssetEntityFactoryImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/scrum/domain/services/AssetEntityFactoryImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/scrum/domain/services/AssetEntityRepositoryImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/scrum/domain/services/AssetEntityRepositoryImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/scrum/domain/services/IAssetDomainService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/scrum/domain/services/IAssetDomainService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/scrum/domain/services/IAssetEntityFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/scrum/domain/services/IAssetEntityFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/scrum/domain/services/IAssetEntityRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/scrum/domain/services/IAssetEntityRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/org/scrum/domain/services/TestJupiterAssetDomainServiceDefSDI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/scrum/domain/services/TestJupiterAssetDomainServiceDefSDI.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/scrum/domain/services/AssetDomainServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/scrum/domain/services/AssetDomainServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/scrum/domain/services/AssetEntityFactoryImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/scrum/domain/services/AssetEntityFactoryImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/scrum/domain/services/AssetEntityRepositoryImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/scrum/domain/services/AssetEntityRepositoryImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/scrum/domain/services/IAssetDomainService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/scrum/domain/services/IAssetDomainService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/scrum/domain/services/IAssetEntityFactory.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/scrum/domain/services/IAssetEntityFactory.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/org/scrum/domain/services/TestJupiterAssetDomainServiceDefSDI.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/org/scrum/domain/services/TestJupiterAssetDomainServiceDefSDI.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -83,6 +70,17 @@
       <option name="PACKAGE_NAME" value="org.scrum.domain.services" />
       <option name="MAIN_CLASS_NAME" value="org.scrum.domain.services.TestJupiterAssetDomainServiceDefSDI" />
       <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="JetRunConfigurationType">
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
+      <option name="filePath" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>

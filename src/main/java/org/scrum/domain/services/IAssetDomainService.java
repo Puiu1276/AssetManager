@@ -3,8 +3,6 @@ package org.scrum.domain.services;
 import org.scrum.domain.asset.Asset;
 import org.scrum.domain.asset.AssetCategory;
 
-import java.time.LocalDateTime;
-import java.util.Date;
 import java.util.List;
 
 public interface IAssetDomainService {
@@ -25,13 +23,6 @@ public interface IAssetDomainService {
 
     public Asset getAssetByName(String name);
     // Obtine numarul total de active
-    public Integer getAssetCount(Asset assetID);
-
-    Integer getAssetCount(Integer assetID);
-
-    public Integer getAssetsCount(Asset asset);
-
-    public Integer getAssetsCount(Integer assetID);
 
     // Actualizeaza locatia unui activ
     public void updateAssetLocation(Integer assetID, String newLocation);
