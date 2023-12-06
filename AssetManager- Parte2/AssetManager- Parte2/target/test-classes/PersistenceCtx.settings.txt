@@ -1,0 +1,75 @@
+/* Oracle 18c into Oracle Virtual Box
+ * 
+sudo -i
+VBoxManage startvm "Oracle DB Developer VM" --type headless
+VBoxManage controlvm "Oracle DB Developer VM" savestate
+*/
+
+/* Oracle 18c into Docker
+ * 
+open -a docker
+docker ps -a
+docker start oracle-xe-18c
+docker stop oracle-xe-18c
+*/
+
+/* Oracle MSD Schema
+ *
+drop user msd cascade;
+create user msd identified by msd
+default tablespace users
+temporary tablespace temp;
+
+grant connect, resource to msd;
+
+grant create view to msd;
+
+alter user msd quota unlimited on users;
+*/
+
+/*
+open -a docker
+## docker pull postgres
+
+## Install postgres: dowload image and startup PG ##########################################
+docker run --name postgresql-container -p 5432:5432 -e POSTGRES_PASSWORD=pgadmin -d postgres
+
+## Check running PG instance
+docker ps -a
+
+## Stop PG container 
+docker stop postgresql-container
+
+## Start PG container
+docker start postgresql-container
+
+############################################################################################
+## Install PGAdmin: dowload image and startup PGAdmin #####################################
+docker run --rm -p 5050:5050 thajeztah/pgadmin4
+## http://0.0.0.0:5050/browser/ [192.168.1.5]
+
+## Check running PG instance
+docker ps -a
+
+## Stop PGAdmin container 
+docker stop pgadmin4
+
+## Start PGAdmin container
+docker start pgadmin4
+
+### PG CLI connection
+docker exec -it postgresql-container bash
+psql -h localhost -p 5432 -U postgres -W
+
+DROP ROLE msd;
+CREATE ROLE msd WITH SUPERUSER CREATEDB CREATEROLE LOGIN ENCRYPTED PASSWORD 'msd';
+
+## Check roles
+\du
+
+CREATE SCHEMA IF NOT EXISTS msd AUTHORIZATION msd;
+
+## Scheck schema
+SELECT * FROM pg_catalog.pg_namespace ORDER BY nspname;
+
+*/
